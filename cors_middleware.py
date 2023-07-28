@@ -5,7 +5,8 @@ def apply_cors_middleware(app: FastAPI):
     # Configure CORS settings
     origins = [
         "http://localhost:3000",
-          "http://localhost:3000/"  # Add any other allowed origins here
+          "http://localhost:3000/",
+        "https://assgiemnt.vercel.app/"# Add any other allowed origins here
     ]
 
     app.add_middleware(
